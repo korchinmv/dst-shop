@@ -1,0 +1,26 @@
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  &__item {
+    background-color: var(--bg-grey-color);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__img {
+    width: 90px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(58, 58, 58, 0.6);
+  }
+}

@@ -1,0 +1,10 @@
+// базовые подключения
+@use "vars";
+@use "mixins";
+// @use "fonts";
+@use "settings";
+
+// подключения компонентов страницы
+@use "./components/pages/delivery-page";
+
+@use "./components/elements/advantages-list";
