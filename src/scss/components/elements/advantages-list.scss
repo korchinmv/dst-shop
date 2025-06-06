@@ -3,6 +3,16 @@
   justify-content: space-between;
   column-gap: 20px;
 
+  @media screen and (width <=990px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  @media screen and (width <=576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__item {
     background-color: var(--bg-grey-color);
     padding: 24px;
@@ -11,10 +21,25 @@
     row-gap: 8px;
   }
 
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @media screen and (width <=768px) {
+      font-size: 18px;
+    }
+  }
+
   &__img {
     width: 90px;
     height: 100px;
     object-fit: contain;
+
+    @media screen and (width <=768px) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__text {
@@ -22,5 +47,9 @@
     font-size: 16px;
     line-height: 120%;
     color: rgba(58, 58, 58, 0.6);
+
+    @media screen and (width <=768px) {
+      font-size: 14px;
+    }
   }
 }
